@@ -1,0 +1,41 @@
+.circle {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.3em;
+    transform-origin: 0 250px;
+}
